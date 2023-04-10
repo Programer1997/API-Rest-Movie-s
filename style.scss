@@ -1,0 +1,129 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    
+
+    header {
+        width: 100%;
+        height: 20%;
+        
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(12,9,121,0.9977240896358543) 26%, rgba(0,212,255,1) 100%);
+        color: white;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        padding-bottom: 1em;
+
+
+        .header-tittle {
+            font-family: sans-serif;
+
+        }
+        form {
+            #search-input {
+                width: 40%;
+                font-size: 1em;
+                margin-right: 1%;
+                padding: 0.5% 1%;
+                border-radius: 1em;
+                
+                
+               
+            }
+            #movie-sort {
+                width: 20%;
+                font-size: 1em;
+                margin-right: 1%;
+                padding: 0.5% 1%;
+                border: none;
+                border-radius: 1em;
+
+            }
+            #search-btn {
+                width: 15%;
+                font-size: 1em;
+                margin-right: 1%;
+                padding: 0.5% 1%;
+                border: none;
+                background-color: #f44336;
+                color: white;
+                border-radius: 1em;
+                
+                
+
+            }
+            #search-btn:hover {
+                filter: contrast(2);
+                background-color: rgb(0, 102, 255);
+                cursor: pointer;
+            }
+
+        }
+
+    }
+    main {
+        width: 100%;
+        height:auto;
+        background-color: #1E1E1E;
+        color: white;
+
+        .movieContainer { 
+            width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+            gap:12px;
+            padding-top: 1em;
+            padding-bottom: 1em;
+            
+
+            .movie-card  {
+                
+                
+
+                img {
+                    
+                
+
+                }
+                h3 {
+
+                }
+                p{
+
+                }
+
+            }
+
+           
+            
+
+        }
+
+    }
+
+    footer { 
+        width: 100%;
+        height: 2em;
+        background-color: #1E1E1E;
+        color: white;
+
+    }
+    
+
+}
