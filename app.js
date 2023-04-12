@@ -67,6 +67,8 @@ function getData() {
             console.log(movieArrayT.Year);
             console.log(movieArrayT.Type);
 
+            displayMovieByName(movieArrayT);
+
             
 
         }
@@ -117,6 +119,41 @@ function displayMovies (movieArray) {  //Type,Poster,Title,Year, /////Gener
         
         
     });
+
+    
+
+}
+
+function displayMovieByName(movieObject){
+
+    console.log(movieObject.Poster);
+    //let imgUrl = movieObject.Poster;
+
+
+    let cardMovie = "";
+    
+    
+
+    cardMovie += `
+        <div class="cardNewMovie">
+                <div class :"posterMovie">
+                    <img src="${movieObject.Poster}" />
+                </div>
+                    
+
+                <div class : "infoMovie">
+                    <h3>${movieObject.Title}</h3>
+                    <p><b>Year : </b>${movieObject.Year}</p>
+                    <p><b>Type : </b> ${movieObject.Type}</p>
+                </div>
+                    
+                </div>
+            `;
+
+
+            containerOfMovies.innerHTML = cardMovie;
+    
+
 
 }
 
