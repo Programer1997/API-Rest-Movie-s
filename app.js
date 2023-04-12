@@ -24,6 +24,15 @@ searchButton.addEventListener("click", (event)=> {
     `apikey=${APIKEY}&`);
 
     getData();
+
+    setTimeout(()=>{
+
+        movieSort.value = "";
+
+    },1000);
+
+    
+    searchInput.value= "";
     
 
 });
